@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Workout Tracker</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/style.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/7053292893.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top" id="main-nav">
+        <a class="navbar-brand navbar-light text-white" href="#new-section">Gym Rat Tracker</a>
+        <button class="d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span><i class="fas fa-bars fa-lg text-white"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#previous-section">Exercises</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="new-section" class="mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mt-5">
+                    <img id="header-img" src="/img/img.jpeg" alt="Header Pic">
+                    <h1 class="text-center"></h1>
+                    <div class="my-4">
+                        <form action="/" method="POST">
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" id="workout-name"
+                                    placeholder="Enter Workout Name">
+                            </div>
+                            <button type="submit" class="btn btn-outline-primary btn-block" id="add-workout">Add New
+                                Workout</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    
+
+    <section id="previous-section" class="py-3">
+        <div class="container">
+            <h1 class="text-center text-white mt-5">Click a workout and add different exercises</h1>
+            <div class="row py-5" id="prev-workout">
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Add exercise modal -->
+    <div class="modal fade" id="add-exercise">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script src="js/app.js"></script>
+
+
+</body>
+
+</html>
